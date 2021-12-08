@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/css/all.css">
     <title>Document</title>
 </head>
-<body class="mx-md-4 mx-1">
+<body class="bg-light">
 
-
-    <header>
+    <!---------------------- navbar start ----------------------->
+    <header class="bg-white shadow-sm px-md-4 px-1">
         <!-- menu header -->
         <nav class="navbar navbar-expand-md navbar-light">
             <!-- div brand name -->
@@ -96,8 +96,81 @@
             
         </nav>
     </header>
+    <!---------------------- navbar end ------------------------->
 
-    
+    <!---------------------- navbar start ----------------------->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- sidebar section -->
+            <div class="col-2 sidebar" id="sidebar">
+                <!-- sidebar menu -->
+                <div class="nav d-flex flex-column">
+                    <!-- item one sidebar -->
+                    <li class="nav-item mt-1"><a href="#collapse-sidbar1" class="nav-link collapsed d-flex align-items-center justify-content-between" data-bs-toggle="collapse">
+                        <div>
+                            <i class="fas me-2 fa-pen"></i>
+                            نوشته ها
+                        </div>
+                        <i class="fas fa-chevron-left"></i>
+                        </a>
+                       <div class="collapse bg-secondary rounded" id="collapse-sidbar1">
+                            <ul class="nav d-flex flex-column">
+                                <li class="nav-item"><a href="#" class="nav-link">مشاهده محصولات </a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">افزودن محصول</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- item two sidebar -->
+                    <li class="nav-item"><a href="#collapse-sidbar2" class="nav-link collapsed d-flex align-items-center justify-content-between" data-bs-toggle="collapse">
+                        <div>
+                            <i class="fas me-2 fa-shopping-cart"></i>
+                            محصولات 
+                        </div>
+                        <i class="fas fa-chevron-left "></i>
+                        </a>
+                        <div class="collapse bg-secondary rounded" id="collapse-sidbar2">
+                            <ul class="nav d-flex flex-column">
+                                <li class="nav-item"><a href="#" class="nav-link">مشاهده محصولات </a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">افزودن محصول</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- item three sidebar -->
+                    <li class="nav-item"><a href="#" class="nav-link">
+                        <i class="fas me-2 fa-comment"></i>
+                        دیدگاه ها
+                    </a></li>
+
+                    <!-- item four sidebar -->
+                    <li class="nav-item"><a href="#" class="nav-link">
+                        <i class="fas me-2 fa-video"></i>
+                        رسانه ها
+                    </a></li>
+
+                    <!-- item five sidebar -->
+                    <li class="nav-item"><a href="#" class="nav-link">
+                        <i class="fas me-2 fa-users"></i>
+                        کاربران
+                    </a></li>
+
+                    <!-- item six sidebar -->
+                    <li class="nav-item"><a href="#" class="nav-link">
+                        <i class="fas me-2 fa-cog"></i>
+                        تنظیمات
+                    </a></li>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <!---------------------- navbar end ------------------------->
+
+
     <script src="../js/Bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
