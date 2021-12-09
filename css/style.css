@@ -1,19 +1,63 @@
-.sidebar {
+/* background sidebar */
+#sidebar {
     background-color: #343a40!important;
     height: calc(100vh - 72px);
+    z-index: 1000;
 }
-.sidebar .nav-link{
+
+/* sidebar text color */
+#sidebar .nav-link{
     color: #fff;
     font-size: 15px;
     margin-bottom: 8px;
 }
-.sidebar .nav-link.collapsed .fa-chevron-left{
+
+/* items sidebar collapse btn */
+#sidebar .nav-link.collapsed .fa-chevron-left{
     transform: rotate(0deg);
 }
-.sidebar .nav-link .fa-chevron-left{
+
+/* items sidebar collapse btn */
+#sidebar .nav-link .fa-chevron-left{
     transform: rotate(-90deg);
 }
-.sidebar .fa-chevron-left {
+
+/* font size and duration items sidebar collapse btn  */
+#sidebar .fa-chevron-left {
     font-size: 14px;
     transition: all 0.3s;
+}
+
+/* duration sidebar collapse btn */
+.fa-angle-double-right{
+    transition: transform 0.5s;
+}
+
+/* sidebar collapse btn when clicked */
+.fa-angle-double-right.collapsed {
+    transform: rotate(180deg);
+}
+
+/* duration sidebar */
+#sidebar{
+    transition: transform 0.3s;
+}
+
+/* translateX sidebar when clicked collapse btn */
+#sidebar.collapsing{
+    transform: translate(100%, 0);
+}
+
+/* translateX sidebar when clicked collapse btn */
+#sidebar.collapse.show{
+    transform: translate(0, 0);
+}
+#content {
+    transition: all 0.3s;
+}
+/* sidebar in mobile size and sm size */
+@media (max-width:768px){
+    #sidebar{
+        height: calc(100vh - 56px);
+    }
 }
